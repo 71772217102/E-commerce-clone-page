@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <title>E-Commerce Website</title>
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        
+        header{
+            background-color: black;
+            color:palevioletred;
+            padding:25px;
+            
+        }
+        
+        h1,ul, li{
+            display: inline;
+        }
+
+        ul{
+            margin-left: 50%;
+        }
+
+        ul li a{
+           text-decoration: none;
+           margin-right: 30px;
+           font-size: 25px;
+           color:aliceblue;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        li a:hover{
+            color:grey;
+            cursor: pointer;
+        }
+
+        #pricetag h2{
+            
+            display: inline;
+            margin-top: 35px;
+            
+        }
+        #pricetag,#search{
+            display: inline;
+            
+        }
+        
+        #search{
+            padding-left: 90px;
+        }
+        #search input{
+            margin-top: 35px;
+            padding: 15px;
+            width: 45%;
+            border-radius: 8px;
+            border: none;
+            box-shadow: 5px 5px 5px  rgb(202, 205, 203);
+            font-size: 20px;
+            
+        }
+       
+        section{
+            display:flex;
+            justify-content: space-around;
+            margin-top: 70px;
+        }
+
+        .products{
+            border:5px solid black;
+            border-radius: 8px;
+          display: inline-block;
+          width:300px;
+          text-align: center;
+          height:450px;
+        }
+
+        .products p{
+            color: rgb(135, 131, 131);
+        }
+
+        .products button{
+            border-radius: 5px;
+            background-color: rgb(111, 107, 107);
+            color:white;
+            padding:5px;
+            font-weight: bold;
+        }
+
+        .products button:hover{
+            background-color: rgb(243, 248, 248);
+            color: black;
+            cursor: pointer;
+        }
+
+         .about{
+            text-align: center;
+           margin-top: 60px;
+            background-color: rgb(89, 87, 87);
+            padding: 5px;
+
+        }
+
+        .about h4{
+            font-size: 25px;
+            color: white;
+        }
+
+        .about p{
+            font-size: 17px;
+            color: cornsilk;
+        }
+
+         .con{
+            text-align: center;
+            background-color: rgb(61, 61, 61);
+            padding: 5px;
+        }
+        .con h4{
+            font-size: 25px;
+            color: white;
+        }
+        .con ul li{
+            
+            font-size: 25px;
+            color:white;
+            display: block;
+        }
+
+       .back a{
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        background-color: rgb(89, 87, 87);
+        color:white;
+        padding: 10px;
+        text-align: center;
+        font-weight: bolder;
+       }
+        
+    </style>
+</head>
+<body>
+   <header id="top">
+     <h1>Shoppy</h1>
+     <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="D:\Frontend\html\form.html" target="_blank">Login</a></li>
+     </ul>
+   </header> 
+
+   <div id="pricetag">
+    <h2>Price Range</h2>
+    <input type="range" min="1" max="10,000" step="5">
+   </div>
+
+   <div id="search">
+    <input type="search" placeholder="search">
+   </div>
+
+   <section>
+    <div class="products">
+        <img src="../images/tshirt.webp" height="200px" width="300px"><br>
+        <h1>Tshirt</h1>
+        <p>This premium T-shirt provides exceptional comfort and durability with its soft,breathable fabric.Perfect for everyday wear and available in a range of colors and sizes</p>
+        <h4>$800.00</h4>
+        <button> Add to cart</button>
+    </div>
+
+    <div  class="products">
+        <img src="../images/mobile.webp"  height="200px" width="300px"><br>
+        <h1>Mobile</h1>
+        <p>Experience cutting-edge technology with this sleek and powerful mobile phone.Featuring a high-resolution display,long-lasting battery,and advanced camera capabilities.</p>
+        <h4>$10000.00</h4>
+        <button>Add to cart</button>
+    </div>
+
+    <div  class="products">
+        <img src="../images/watch.webp"  height="200px" width="300px"><br>
+        <h1>Watch</h1>
+        <p>Elevate your style with this elegant watch,combining precision timekeeping with a sophisticated design.Water-resistant and crafted  for everyday wear.</p>
+        <h4>$999.00</h4>
+        <button>Add to cart</button>
+    </div>
+
+    <div  class="products">
+        <img src="../images/shoe.jpg"  height="200px" width="300px"><br>
+        <h1>Shoe</h1>
+        <p>Step into comfort and style with these versatile shoes,designed for both casual and athletic wear.Made with durable materials and cushioned soles for maximum support.</p>
+        <h4>$1999.00</h4>
+        <button>Add to cart</button>
+    </div>
+   </section>
+   
+   <footer>
+    <div class="about">
+        <h4 id="about-us">About Us</h4>
+        <p>Welcome to Shoppy!</p>
+
+           <p> At Shoppy, we believe that shopping should be more than just a transaction—it should be an experience. Founded in 2000 with a mission to selling a products, we’re dedicated to bringing you a curated selection of high-quality products that enhance your life.
+            We love hearing from our customers! Whether you have a question, a suggestion, or just want to say hello, feel free to reach out to us through contact method, e.g., email, phone, social media.
+            Thank you for choosing Shoppy. We’re excited to have you as part of our community and look forward to serving you.
+            Happy shopping!</p>
+           <p> The ShoppyTeam</p>
+    </div>
+   
+    <div class="con">
+        <h4 id="contact">Contact</h4>
+        <ul>
+            <li>Phone Number:<a href="#" > +91 0984763534</a></li><br>
+            <li>Email       :<a href="#" > shoppy@gmail.com</a></li><br>
+            <li>Facebook    :<a href="#" > facebook.com/shoppy</a></li><br>
+            <li>Twitter     :<a href="#" > twitter.com/shoppy</a></li><br>
+            <li>Instagram   :<a href="#" > instagram.com/shoppy</a></li><br>
+            
+        </ul>
+    </div>
+
+    <div class="back">
+        <a href="#top">Back to Top</a>
+    </div>
+
+   </footer>
+
+</body>
+</html>
